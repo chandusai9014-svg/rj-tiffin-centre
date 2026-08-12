@@ -3,84 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="RJ Tiffin Centre - Home-style South Indian food in Electronic City Phase II, Bangalore.">
+<meta name="description" content="RJ Tiffin Centre - Home-style South Indian vegetarian food in Bangalore">
 <title>RJ Tiffin Centre | Home-Style South Indian Food</title>
 <style>
-:root{--gold:#e9ad2f;--gold2:#ffd66b;--black:#080808;--card:#121212;--text:#f8f5ed;--muted:#c9c4b8;--line:#3a2b12}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--text);font-family:Arial,Helvetica,sans-serif}
-header{position:sticky;top:0;z-index:20;background:rgba(8,8,8,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
-.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}
-.brand{display:flex;align-items:center;gap:12px}.brand img{width:58px;height:58px;object-fit:cover;border-radius:50%;border:1px solid var(--gold)}
-.brand strong{font-family:Georgia,serif;color:var(--gold2);font-size:22px}.brand span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
-nav a{color:#eee;text-decoration:none;margin:0 10px;font-size:14px}nav a:hover{color:var(--gold2)}
-.cart{border:1px solid var(--gold);background:transparent;color:var(--gold2);padding:10px 14px;border-radius:8px;cursor:pointer}
-.hero{max-width:1150px;margin:auto;min-height:560px;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:45px 20px;background:radial-gradient(circle at 80% 50%,#3a260d 0,#080808 48%,#080808 100%)}
-.hero-logo{width:220px;height:220px;object-fit:cover;border-radius:50%;border:2px solid var(--gold);box-shadow:0 0 35px #9a6b1d66}
-.kicker{color:var(--gold2);letter-spacing:3px;font-size:13px}.hero h1{font-family:Georgia,serif;font-size:58px;line-height:1.02;margin:12px 0}.hero h1 span{color:var(--gold2)}.hero p{color:var(--muted);font-size:17px;line-height:1.7;max-width:520px}
-.btn{display:inline-block;border:1px solid var(--gold);padding:13px 18px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px 8px 8px 0}.primary{background:var(--gold);color:#111}.secondary{color:var(--gold2)}
-.section{max-width:1150px;margin:auto;padding:60px 20px}.title{text-align:center;font-family:Georgia,serif;color:var(--gold2);font-size:36px;margin:0 0 8px}.sub{text-align:center;color:var(--muted);margin-bottom:32px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#171717,#0d0d0d);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 8px 30px #0008}.food-icon{font-size:46px}.card h3{font-family:Georgia,serif;font-size:22px;margin:10px 0}.price{color:var(--gold2);font-size:23px;font-weight:700}.add{width:100%;margin-top:14px;border:0;border-radius:8px;background:var(--gold);padding:11px;font-weight:700;cursor:pointer}
-.info{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.info h3{color:var(--gold2);font-family:Georgia,serif}.info p{color:var(--muted);line-height:1.7}
-.badges{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;border:1px solid var(--line);padding:22px;border-radius:12px;color:#eee}.badges b{color:var(--gold2)}
-footer{text-align:center;border-top:1px solid var(--line);padding:35px 20px;color:var(--muted)}footer strong{color:var(--gold2)}
-.modal{display:none;position:fixed;inset:0;background:#000b;z-index:50;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.box{background:#151515;border:1px solid var(--gold);border-radius:14px;padding:24px;max-width:520px;width:100%;max-height:90vh;overflow:auto}.box h2{color:var(--gold2);font-family:Georgia,serif}.row{display:flex;justify-content:space-between;border-bottom:1px solid #302716;padding:10px 0}.box input{width:100%;padding:12px;margin:7px 0;background:#0c0c0c;border:1px solid #55411e;color:white;border-radius:7px}.close{float:right;background:none;color:#fff;border:0;font-size:24px;cursor:pointer}
-@media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;text-align:center;padding-top:35px}.hero-logo{margin:auto}.hero h1{font-size:42px}.hero p{margin-left:auto;margin-right:auto}.grid,.info{grid-template-columns:1fr}.brand strong{font-size:17px}}
+:root{--gold:#f4b51b;--green:#20a447;--bg:#070707;--card:#121212;--muted:#bbb}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top,#19130a,#070707 50%,#000);color:#fff;font-family:Arial,sans-serif}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.95);border-bottom:1px solid #684c0a}.nav{min-height:86px;display:flex;align-items:center;gap:18px}.logo{width:76px;height:76px;object-fit:cover;border-radius:50%;border:2px solid var(--gold)}.brand{flex:1}.brand h1{margin:0;color:var(--gold);font:700 28px Georgia,serif}.brand p{margin:4px 0;color:#ddd}nav{display:flex;gap:22px}nav a:hover,nav a.active{color:var(--gold)}.cart-btn,.btn{border:1px solid var(--gold);background:transparent;color:#fff;padding:12px 17px;border-radius:7px;cursor:pointer}.mobile{display:none}
+.hero{display:grid;grid-template-columns:1fr 1.15fr;gap:35px;align-items:center;padding:60px 0 35px}.kicker{font:22px Georgia,serif}.hero h2{font:700 64px/1 Georgia,serif;color:var(--gold);text-transform:uppercase;margin:12px 0}.line{width:330px;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}.hero p{font-size:18px;line-height:1.6;color:#ddd}.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.green{background:var(--green);border-color:var(--green)}.photo{min-height:430px;border-radius:24px;background:url("https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1200&q=85") center/cover;border:1px solid #75540b;box-shadow:0 20px 55px #000}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:20px 0 35px}.feature{padding:12px 16px;border-right:1px solid #333}.feature:last-child{border:0}.feature b{display:block}.feature span{color:#aaa;font-size:13px}
+.bulk{border:1px solid var(--gold);border-radius:11px;text-align:center;padding:19px;margin:10px auto 42px;background:rgba(244,181,27,.035);font-size:19px;line-height:1.5}.bulk .phone{color:var(--gold);font-size:22px;font-weight:800}
+.title{text-align:center;margin:25px 0}.title h2{margin:0;color:var(--gold);font:700 34px Georgia,serif}.title p{color:#aaa}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(#181818,#0c0c0c);border:1px solid #72520b;border-radius:10px;overflow:hidden}.card:hover{transform:translateY(-4px);transition:.2s}.food{width:100%;height:205px;object-fit:cover}.inside{padding:16px}.inside h3{margin:0 0 7px;font-size:21px}.price{color:var(--gold);font-size:21px;font-weight:bold;margin-bottom:13px}.add{width:100%;padding:11px;border:0;border-radius:6px;background:#188d3a;color:#fff;font-weight:bold;cursor:pointer}.view{text-align:center;padding:25px 0 55px}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:45px}.box{background:#0d0d0d;border:1px solid #333;border-radius:10px;padding:24px}.box h3{color:var(--gold);font:700 22px Georgia,serif;margin-top:0}.box p{color:#ccc;line-height:1.65}.map{display:inline-block;background:var(--gold);color:#111;padding:10px 15px;border-radius:6px;font-weight:bold}
+footer{border-top:1px solid #333;background:#050505;padding:35px 0}.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}.foot h3{color:var(--gold);font-family:Georgia,serif}.foot p,.foot li{color:#aaa;line-height:1.7}.foot ul{list-style:none;padding:0}.copy{text-align:center;border-top:1px solid #222;margin-top:25px;padding-top:18px;color:#666}
+.cart{position:fixed;right:-420px;top:0;width:min(400px,94vw);height:100vh;background:#101010;border-left:1px solid var(--gold);z-index:20;padding:24px;transition:.3s;overflow:auto}.cart.open{right:0}.close{float:right;background:none;border:0;color:#fff;font-size:28px}.cart h2{color:var(--gold);font-family:Georgia,serif}.item{display:flex;justify-content:space-between;border-bottom:1px solid #333;padding:12px 0}.qty button{background:#222;color:#fff;border:1px solid #555;width:28px;height:28px}.total{color:var(--gold);font-size:22px;font-weight:bold;margin:22px 0}.wa{width:100%;padding:14px;border:0;border-radius:7px;background:var(--green);color:#fff;font-weight:bold;cursor:pointer}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.photo{order:-1;min-height:310px}.features{grid-template-columns:repeat(2,1fr)}.menu{grid-template-columns:repeat(2,1fr)}.info{grid-template-columns:1fr}nav{display:none}.mobile{display:block;background:#111;color:#fff;border:1px solid #555;padding:9px;border-radius:6px}}
+@media(max-width:600px){.brand h1{font-size:20px}.brand p{font-size:12px}.logo{width:62px;height:62px}.hero h2{font-size:45px}.menu{grid-template-columns:1fr}.bulk{font-size:16px}.bulk .phone{font-size:19px}.foot{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header><div class="nav">
-  <div class="brand"><img src="rj-logo.jpg" alt="RJ Tiffin Centre logo"><div><strong>RJ TIFFIN CENTRE</strong><span>Home-style taste, made with love ❤️</span></div></div>
-  <nav><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#timings">Timings</a><a href="#contact">Contact</a></nav>
-  <button class="cart" onclick="openCart()">🛒 Cart (<span id="count">0</span>)</button>
+
+<header><div class="wrap nav">
+<img class="logo" src="rj-logo.jpg" alt="RJ Tiffin Centre logo">
+<div class="brand"><h1>RJ TIFFIN CENTRE</h1><p>Home-style taste, made with love ❤️</p></div>
+<nav><a class="active" href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About Us</a><a href="#timings">Timings</a><a href="#contact">Contact</a></nav>
+<button class="cart-btn" onclick="openCart()">🛒 Cart (<span id="count">0</span>)</button><button class="mobile" onclick="showNav()">☰</button>
 </div></header>
 
-<main>
-<section class="hero" id="home">
-  <div>
-    <div class="kicker">PURE VEG • FRESHLY PREPARED • HOME-STYLE</div>
-    <h1>Pure Taste.<br><span>Made With Love.</span></h1>
-    <p>Enjoy delicious, hygienic and home-style South Indian tiffins, freshly prepared for you in Electronic City Phase II.</p>
-    <a class="btn primary" href="https://wa.me/916383163172?text=Hi%20RJ%20Tiffin%20Centre%2C%20I%20want%20to%20place%20an%20order." target="_blank">💬 ORDER ON WHATSAPP</a>
-    <a class="btn secondary" href="tel:+916383163172">📞 CALL US</a>
-  </div>
-  <div style="text-align:center"><img class="hero-logo" src="rj-logo.jpg" alt="RJ Tiffin Centre"></div>
+<main id="home">
+<section class="wrap hero">
+<div><div class="kicker">PURE VEG. PURE TASTE.</div><h2>Made<br>With Love.</h2><div class="line"></div>
+<p>Enjoy delicious, hygienic and home-style South Indian tiffins made fresh every day.</p>
+<div class="ctas"><a class="btn green" target="_blank" href="https://wa.me/916383163172?text=Hi%20RJ%20Tiffin%20Centre%2C%20I%20would%20like%20to%20place%20an%20order.">🟢 ORDER ON WHATSAPP</a><a class="btn" href="tel:+916383163172">📞 CALL US</a></div></div>
+<div class="photo"></div>
 </section>
 
-<section class="section" id="menu">
-  <h2 class="title">Our Menu</h2><div class="sub">Simple food. Great taste.</div>
-  <div class="grid">
-    <div class="card"><div class="food-icon">🍚</div><h3>IDLY</h3><div class="price">₹50</div><button class="add" onclick="add('IDLY',50)">🛒 ADD TO CART</button></div>
-    <div class="card"><div class="food-icon">🥯</div><h3>POORI</h3><div class="price">₹50</div><button class="add" onclick="add('POORI',50)">🛒 ADD TO CART</button></div>
-    <div class="card"><div class="food-icon">🥞</div><h3>SET DOSA</h3><div class="price">₹40</div><button class="add" onclick="add('SET DOSA',40)">🛒 ADD TO CART</button></div>
-    <div class="card"><div class="food-icon">🥞</div><h3>MASALA DOSA</h3><div class="price">₹60</div><button class="add" onclick="add('MASALA DOSA',60)">🛒 ADD TO CART</button></div>
-    <div class="card"><div class="food-icon">🧅🥞</div><h3>ONION DOSA</h3><div class="price">₹60</div><button class="add" onclick="add('ONION DOSA',60)">🛒 ADD TO CART</button></div>
-    <div class="card"><div class="food-icon">🥚🥞</div><h3>EGG DOSA</h3><div class="price">₹70</div><button class="add" onclick="add('EGG DOSA',70)">🛒 ADD TO CART</button></div>
-  </div>
+<section class="wrap features">
+<div class="feature">🌿 <b>PURE VEG</b><span>100% Vegetarian</span></div>
+<div class="feature">◷ <b>FRESHLY PREPARED</b><span>Made fresh daily</span></div>
+<div class="feature">♨ <b>TASTY & HEALTHY</b><span>Home-style recipes</span></div>
+<div class="feature">✓ <b>HYGIENIC & CLEAN</b><span>Quality first</span></div>
 </section>
 
-<section class="section" id="about">
-  <div class="info">
-    <div class="card"><h3>ABOUT US</h3><p>RJ Tiffin Centre brings you authentic home-style South Indian tiffins, prepared fresh with traditional recipes and lots of care.</p></div>
-    <div class="card" id="timings"><h3>OPENING HOURS</h3><p><b>Monday – Saturday</b><br>6:00 AM – 11:00 AM<br>5:00 PM – 10:30 PM<br><br><b>Sunday</b><br>Closed</p></div>
-    <div class="card" id="contact"><h3>LOCATION</h3><p>Electronic City Phase II, Bangalore – 560100.</p><a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Electronic%20City%20Phase%20II%2C%20Bangalore" target="_blank">📍 GET DIRECTIONS</a></div>
-  </div>
+<!-- Bulk-order message is deliberately in the middle, not at the top-right. -->
+<section class="wrap bulk">We will take <strong>bulk orders for any functions</strong> and we will deliver on time with great taste.<br>Please contact <a class="phone" href="tel:+916383163172">📞 +91 6383163172 (Yuvaraj)</a></section>
+
+<section id="menu" class="wrap">
+<div class="title"><h2>✦ OUR MENU ✦</h2><p>Simple food. Great taste.</p></div>
+<div class="menu">
+<article class="card"><img class="food" src="idly.svg" alt="Idly"><div class="inside"><h3>IDLY</h3><div class="price">₹50</div><button class="add" onclick="add('Idly',50)">🛒 ADD TO CART</button></div></article>
+<article class="card"><img class="food" src="poori.svg" alt="Poori"><div class="inside"><h3>POORI</h3><div class="price">₹50</div><button class="add" onclick="add('Poori',50)">🛒 ADD TO CART</button></div></article>
+<article class="card"><img class="food" src="set-dosa.svg" alt="Two separate set dosas"><div class="inside"><h3>SET DOSA</h3><div class="price">₹40</div><button class="add" onclick="add('Set Dosa',40)">🛒 ADD TO CART</button></div></article>
+<article class="card"><img class="food" src="masala-dosa.svg" alt="Masala Dosa"><div class="inside"><h3>MASALA DOSA</h3><div class="price">₹60</div><button class="add" onclick="add('Masala Dosa',60)">🛒 ADD TO CART</button></div></article>
+<article class="card"><img class="food" src="onion-dosa.svg" alt="Onion Dosa"><div class="inside"><h3>ONION DOSA</h3><div class="price">₹60</div><button class="add" onclick="add('Onion Dosa',60)">🛒 ADD TO CART</button></div></article>
+<article class="card"><img class="food" src="egg-dosa.svg" alt="Egg Dosa with egg"><div class="inside"><h3>EGG DOSA</h3><div class="price">₹70</div><button class="add" onclick="add('Egg Dosa',70)">🛒 ADD TO CART</button></div></article>
+</div>
+<div class="view"><button class="btn" onclick="openCart()">🛒 VIEW CART & PLACE ORDER</button></div>
 </section>
 
-<section class="section"><div class="badges"><span>🛡️ <b>HYGIENIC & CLEAN</b></span><span>🌿 <b>FRESH INGREDIENTS</b></span><span>🏠 <b>HOME-STYLE TASTE</b></span><span>😊 <b>CUSTOMER SATISFACTION</b></span></div></section>
+<section id="about" class="wrap info">
+<div class="box"><h3>👨‍🍳 ABOUT US</h3><p>RJ Tiffin Centre brings you authentic home-style South Indian tiffins made with fresh ingredients, traditional recipes and lots of love.</p></div>
+<div class="box" id="timings"><h3>◷ OPENING HOURS</h3><p><strong>Monday - Saturday</strong><br>6:00 AM - 11:00 AM<br>5:00 PM - 10:30 PM</p><p><strong>Sunday</strong><br><span style="color:#ff4545">CLOSED</span></p></div>
+<div class="box" id="contact"><h3>📍 LOCATION</h3><p>Rajarajeshwari Temple,<br>Rajeshwari Nagar, G.S. Palya,<br>Electronic City Phase - II,<br>Bangalore - 560100.</p><a class="map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Rajarajeshwari+Temple+Rajeshwari+Nagar+GS+Palya+Bangalore+560100">📍 GET DIRECTIONS</a></div>
+</section>
 </main>
 
-<footer><strong>RJ TIFFIN CENTRE</strong><br>Home-style taste, made with love ❤️<br><br>📞 <a href="tel:+916383163172" style="color:#ffd66b">+91 63831 63172</a><br><small>© 2026 RJ Tiffin Centre. All Rights Reserved.</small></footer>
+<footer><div class="wrap foot">
+<div><img class="logo" src="rj-logo.jpg" alt="RJ Tiffin Centre"><p>Home-style taste,<br>made with love ❤️</p></div>
+<div><h3>QUICK LINKS</h3><ul><li><a href="#home">Home</a></li><li><a href="#menu">Menu</a></li><li><a href="#about">About Us</a></li><li><a href="#timings">Timings</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h3>CONTACT US</h3><p>📞 <a href="tel:+916383163172">+91 6383163172</a><br><strong style="color:var(--gold)">Yuvaraj</strong></p><a class="btn green" target="_blank" href="https://wa.me/916383163172">🟢 ORDER NOW</a></div>
+</div><div class="wrap copy">© 2026 RJ Tiffin Centre. All Rights Reserved. 🌿</div></footer>
 
-<div class="modal" id="modal"><div class="box"><button class="close" onclick="closeCart()">×</button><h2>Your Order</h2><div id="items"></div><h3>Total: ₹<span id="total">0</span></h3><input id="name" placeholder="Your name"><input id="phone" placeholder="Your phone number"><button class="add" onclick="sendOrder()">💬 SEND ORDER ON WHATSAPP</button></div></div>
+<aside class="cart" id="cart"><button class="close" onclick="closeCart()">×</button><h2>Your Order</h2><div id="items"><p style="color:#aaa">Your cart is empty.</p></div><div class="total">Total: ₹<span id="total">0</span></div><button class="wa" onclick="whatsapp()">🟢 PLACE ORDER ON WHATSAPP</button></aside>
 
 <script>
 const cart={};
-function add(name,price){cart[name]=(cart[name]||{price,qty:0});cart[name].qty++;updateCount();alert(name+" added to cart");}
-function updateCount(){document.getElementById('count').textContent=Object.values(cart).reduce((s,x)=>s+x.qty,0)}
-function openCart(){render();document.getElementById('modal').classList.add('show')}
-function closeCart(){document.getElementById('modal').classList.remove('show')}
-function render(){let total=0,html='';for(const [name,x] of Object.entries(cart)){total+=x.price*x.qty;html+=`<div class="row"><span>${name} × ${x.qty}</span><span>₹${x.price*x.qty}</span></div>`}document.getElementById('items').innerHTML=html||'<p>Your cart is empty.</p>';document.getElementById('total').textContent=total}
-function sendOrder(){let name=document.getElementById('name').value.trim();let phone=document.getElementById('phone').value.trim();let lines=[];let total=0;for(const [item,x] of Object.entries(cart)){lines.push(`${item} x ${x.qty} = ₹${x.price*x.qty}`);total+=x.price*x.qty}if(!lines.length){alert('Please add an item first.');return}if(!name){alert('Please enter your name.');return}let msg=`Hi RJ Tiffin Centre,%0A%0AOrder from website:%0A${lines.join('%0A')}%0A%0ATotal: ₹${total}%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}`;window.open('https://wa.me/916383163172?text='+msg,'_blank')}
+function add(n,p){if(!cart[n])cart[n]={p:p,q:0};cart[n].q++;render();openCart()}
+function change(n,d){if(!cart[n])return;cart[n].q+=d;if(cart[n].q<=0)delete cart[n];render()}
+function render(){let h='',t=0,c=0;Object.keys(cart).forEach(n=>{let x=cart[n];t+=x.p*x.q;c+=x.q;h+=`<div class="item"><div><b>${n}</b><br>₹${x.p} × ${x.q}</div><div class="qty"><button onclick="change('${n}',-1)">−</button> <button onclick="change('${n}',1)">+</button></div></div>`});document.getElementById('items').innerHTML=h||'<p style="color:#aaa">Your cart is empty.</p>';document.getElementById('total').textContent=t;document.getElementById('count').textContent=c}
+function openCart(){document.getElementById('cart').classList.add('open')}
+function closeCart(){document.getElementById('cart').classList.remove('open')}
+function whatsapp(){let k=Object.keys(cart);if(!k.length){alert('Please add an item first.');return}let t=0,m='Hi RJ Tiffin Centre, I would like to place an order:%0A%0A';k.forEach(n=>{let x=cart[n];t+=x.p*x.q;m+=encodeURIComponent(n)+' x '+x.q+' = ₹'+(x.p*x.q)+'%0A'});m+='%0ATotal: ₹'+t;window.open('https://wa.me/916383163172?text='+m,'_blank')}
+function showNav(){let n=document.querySelector('nav');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.top='86px';n.style.right='15px';n.style.flexDirection='column';n.style.background='#111';n.style.padding='18px';n.style.border='1px solid #444';n.style.borderRadius='8px'}
+render();
 </script>
 </body>
 </html>
